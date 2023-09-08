@@ -33,6 +33,3 @@ echo network           =   $network
 echo type              =   $type
 echo id                =   $id
 echo version           =   $version
-
-echo "Press any key to continue..."
-read x
