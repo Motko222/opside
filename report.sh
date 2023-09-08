@@ -25,12 +25,12 @@ if [ $diffBlockHeight -gt 10 ]
     status=ok
 fi
 
-echo localHeight       =   $localBlockHeightNum
-echo remoteHeight      =   $remoteBlockHeightNum
-echo isSynced          =   $isSynced
-echo status            =   $status
-echo note              =   $note
-echo network           =   $network
-echo type              =   $type
-echo id                =   $id
-echo version           =   $version
+echo localHeight=$localBlockHeightNum
+echo remoteHeight=$remoteBlockHeightNum
+echo isSynced=$isSynced
+echo status=$status
+echo note=$note
+echo network=$network
+echo type=$type
+echo id=$id
+echo version=$version
