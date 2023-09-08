@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /root/testnet-auto-install-v2/opside-chain
+cd $path
 network=pre-alpha
 type=-
 id=-
