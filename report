@@ -24,13 +24,6 @@ if [ $diffBlockHeight -gt 10 ]
     status=ok
 fi
 
-if [ $diffBlockHeight -gt 10 ]
-  then
-    isSynced=false
-  else
-    isSynced=true
-fi
-
 echo localHeight       =   $localBlockHeightNum
 echo remoteHeight      =   $remoteBlockHeightNum
 echo isSynced          =   $isSynced
