@@ -1,4 +1,4 @@
-#opside launch scripts
+# opside validator control scripts
 
 INSTALL
 cd $HOME
