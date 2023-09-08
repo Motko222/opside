@@ -1,4 +1,4 @@
-#!/bib/bash
+#!/bin/bash
 
 cd /root/testnet-auto-install-v2/opside-chain
 network=pre-alpha
