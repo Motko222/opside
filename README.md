@@ -1,3 +1,5 @@
+#opside launch scripts
+
 INSTALL
 cd $HOME
 https://github.com/Motko222/opside
