@@ -7,7 +7,8 @@ cd $HOME/opside
 chmod +x *.sh
 
 CREATE CONFIG FILE
-nano $HOME/opside
+mkdir ~/config
+nano ~/config/opside.sh
 
 #!/bin/bash
 path=/root/testnet-auto-install-v2/opside-chain
