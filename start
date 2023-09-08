@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "start"
+bash /root/testnet-auto-install-v2/opside-chain/control-panel.sh
