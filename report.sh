@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source ~/scripts/opside/config.sh
 cd $path
 network=pre-alpha
 type=-
