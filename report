@@ -18,7 +18,7 @@ if [ $diffBlockHeight -gt 10 ]
   then
     isSynced=false
     status=error
-    note="node not synced"
+    note="syncing $localBlockHeightNum/$remoteBlockHeightNum"
   else
     isSynced=true
     status=ok
