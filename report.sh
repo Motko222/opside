@@ -3,7 +3,7 @@
 source ~/config/opside.sh
 cd $path
 network=pre-alpha
-type=-
+type=validator
 id=-
 version=$(cat ./config/version)
 
