@@ -10,6 +10,7 @@ CREATE CONFIG FILE
 mkdir ~/config
 nano ~/config/opside.sh
 
+DEFINE CONFIG FILE
 #!/bin/bash
 path=/root/testnet-auto-install-v2/opside-chain
 
