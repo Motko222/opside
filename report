@@ -1,5 +1,7 @@
 #!/bib/bash
 
+cd /root/testnet-auto-install-v2/opside-chain
+
 localBlockHeight=$(curl -s http://127.0.0.1:8545 -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":0}' | jq ".result")
 remoteBlockHeight=$(curl -s https://pre-alpha-us-http-geth.opside.network -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":0}' | jq ".result")
 localBlockHeightNum=${localBlockHeight:3:-1}
@@ -11,6 +13,16 @@ diffBlockHeight=$(expr $remoteBlockHeightNum - $localBlockHeightNum)
 if [ $diffBlockHeight -gt 10 ]
   then
     isSynced=false
+    status=error
+    note=node not synced
+  else
+    isSynced=true
+    status=ok
+fi
+
+if [ $diffBlockHeight -gt 10 ]
+  then
+    isSynced=false
   else
     isSynced=true
 fi
@@ -18,4 +30,9 @@ fi
 echo localHeight       =   $localBlockHeightNum
 echo remoteHeight      =   $remoteBlockHeightNum
 echo isSynced          =   $isSynced
-
+echo status            =   $status
+echo note              =   $note
+echo network           =   pre-alpha
+echo type              =   -
+echo id                =   -
+echo version           =   $(cat ./config/version)
