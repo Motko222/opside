@@ -10,6 +10,6 @@ CREATE CONFIG FILE
 nano $HOME/opside
 
 #!/bin/bash
-path=$HOME/opside/config.sh
+path=/root/testnet-auto-install-v2/opside-chain
 
 
