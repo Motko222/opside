@@ -1,8 +1,8 @@
 # opside validator control scripts
 
 **INSTALL**
-cd ~/scripts
-https://github.com/Motko222/opside
+cd ~/scripts;
+https://github.com/Motko222/opside;
 chmod +x -R ~/scripts
 
 **CREATE CONFIG FILE**
