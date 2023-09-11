@@ -12,6 +12,6 @@ nano ~/config/opside.sh
 
 DEFINE CONFIG FILE
 #!/bin/bash
-path=/root/testnet-auto-install-v2/opside-chain
+path=/root/testnet-auto-install-v3/opside-chain
 
 
