@@ -13,7 +13,7 @@ if [ -f "$FILE" ]; then
     echo "$FILE exists, skipping creation..."
 else 
     echo "$FILE does not exist, creating..."
-    echo "#!/bin/bash" > $FILE
-    echo "id=optional" >> $FILE
-    echo "path=/root/testnet-auto-install-v3/opside-chain" >> $FILE
+    echo '#!/bin/bash' > $FILE
+    echo 'id=optional' >> $FILE
+    echo 'path=/root/testnet-auto-install-v3/opside-chain' >> $FILE
 fi
