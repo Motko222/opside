@@ -14,6 +14,7 @@ remoteBlockHeightNum=${remoteBlockHeight:3:-1}
 ((localBlockHeightNum=16#$localBlockHeightNum));
 ((remoteBlockHeightNum=16#$remoteBlockHeightNum));
 diffBlockHeight=$(expr $remoteBlockHeightNum - $localBlockHeightNum)
+folderSize=$(du -hs $path | awk '{print $1}')
 
 if [ $diffBlockHeight -gt 10 ]
   then
