@@ -4,7 +4,7 @@ source ~/config/opside.sh
 cd $path
 network=pre-alpha
 type=validator
-id=-
+
 version=$(cat ./config/version)
 
 localBlockHeight=$(curl -s http://127.0.0.1:8545 -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":0}' | jq ".result")
