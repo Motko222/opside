@@ -1,6 +1,6 @@
  #!/bin/bash
 
-source ~/config/opside
+source ~/config/opside.sh
 cd $path
 network=pre-alpha
 type=validator
