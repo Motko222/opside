@@ -16,7 +16,7 @@ remoteBlockHeightNum=${remoteBlockHeight:3:-1}
 diffBlockHeight=$(expr $remoteBlockHeightNum - $localBlockHeightNum)
 folderSize=$(du -hs $path | awk '{print $1}')
 
-if [ $diffBlockHeight -gt 10 ] | [ -z $localBlockHeight ]
+if [ $diffBlockHeight -gt 10 ]
   then
     isSynced=false
     status=error
