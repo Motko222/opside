@@ -1,9 +1,8 @@
  #!/bin/bash
 
-source ~/config/opside.sh
+source ~/scripts/opside/config/env
+
 cd $path
-network=pre-alpha
-type=validator
 
 version=$(cat ./config/version)
 
