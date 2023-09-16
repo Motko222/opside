@@ -1,4 +1,4 @@
 #!/bin/bash
 
-source ~/config/opside.sh
+source ~/scripts/opside/config/env
 bash $path/control-panel.sh
