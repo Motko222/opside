@@ -7,7 +7,7 @@ rm testnet-auto-install-v3.tar.gz
 chmod +x -R ./testnet-auto-install-v3
 cd ./testnet-auto-install-v3
 ./install-ubuntu-1.0.sh
-
+ 
 if [ -f ~/scripts/opside/config/env] 
   then
     echo "Config file found."
