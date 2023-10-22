@@ -23,7 +23,7 @@ if [ $diffBlockHeight -gt 10 ]
   else
     isSynced=true
     status=ok
-fi
+fi 
 
 echo "updated='$(date +'%y-%m-%d %H:%M')'"
 echo localHeight=$localBlockHeightNum
