@@ -25,6 +25,12 @@ if [ $diffBlockHeight -gt 10 ]
     status=ok
 fi 
 
+if [ -z $localBlockHeight ]
+  then
+    status=error
+    note="cannot fetch local height"
+fi
+
 echo "updated='$(date +'%y-%m-%d %H:%M')'"
 echo localHeight=$localBlockHeightNum
 echo remoteHeight=$remoteBlockHeightNum
